@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="action_settings">About</string>
+    <string name="lets_calculate">Lets Calculate</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="calculate_btn">Calculate</string>
+    <string name="see_bmi_chart">See BMI Chart</string>
+    <string name="title_activity_3">Activity3</string>
+</resources>

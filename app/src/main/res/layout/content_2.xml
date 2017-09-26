@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shahwar.bmi.Activity2"
+    tools:showIn="@layout/activity_2"
+    android:background="@drawable/back">
+
+    <EditText
+        android:id="@+id/weighttxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:layout_toRightOf="@+id/resulttxt"
+        android:ems="10"
+        android:hint="Enter Weight in KG"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0E9F92"
+        app:srcCompat="@drawable/weight"
+        android:layout_alignTop="@+id/weighttxt"
+        android:layout_toLeftOf="@+id/weighttxt"
+        android:layout_toStartOf="@+id/weighttxt" />
+
+    <EditText
+        android:id="@+id/heighttxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weighttxt"
+        android:layout_alignStart="@+id/weighttxt"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:hint="Enter Height in Meter "
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0E9F92"
+        app:srcCompat="@drawable/scale"
+        android:layout_alignTop="@+id/heighttxt"
+        android:layout_toLeftOf="@+id/heighttxt"
+        android:layout_toStartOf="@+id/heighttxt" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heighttxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:background="#1179F5"
+        android:onClick="onButtonTwo"
+        android:text="@string/calculate_btn" />
+
+    <TextView
+        android:id="@+id/bmitxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2"
+        android:layout_marginTop="57dp"
+        android:layout_toEndOf="@+id/btn2"
+        android:layout_toRightOf="@+id/btn2"
+        android:text="Your BMI"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/resulttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bmitxt"
+        android:layout_alignBottom="@+id/bmitxt"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/btn2"
+        android:layout_toStartOf="@+id/btn2"
+        android:text="Result"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resulttxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#1179F5"
+        android:onClick="onBmiChart"
+        android:text="@string/see_bmi_chart"
+        android:textColor="#000000" />
+
+</RelativeLayout>
